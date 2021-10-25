@@ -1,0 +1,269 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4F2EED18-C656-475F-8814-1DD0BB10C438}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GorusmeKayitlari.Resources</RootNamespace>
+    <AssemblyName>GorusmeKayitlari.Resources</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DigerResimler.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DigerResimler.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Icons.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Icons.resx</DependentUpon>
+    </Compile>
+    <Compile Include="NesneResimleri.Designer.cs">
+      <DependentUpon>NesneResimleri.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DigerResimler.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>DigerResimler.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Icons.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Icons.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NesneResimleri.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>NesneResimleri.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Buyutec.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Buyutec_Carpiisaretli.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\database.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\database_export.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\excelAktar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dislicark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\guncellemeleri_denetle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\htmlAktar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pdfAktar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lisans_key.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loading.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo_x512_material.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yapimci_x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yardim_x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gorusme.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gorusme_Duzenle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gorusme_Ekle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gorusme_Gizle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gorusme_Sil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kategori.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kategori_Duzenle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kategori_Ekle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kategori_Sec.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kategori_Sil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kullanıcı_Sec.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kullanici.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kullanici_Duzenle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kullanici_Ekle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kullanici_Sil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kurum.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kurum_Duzenle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kurum_Ekle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kurum_Goruntule.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kurum_Goruntule_Tum.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kurum_Sec.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kurum_Sil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Yetkili.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Yetkili_Duzenle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Yetkili_Ekle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Yetkili_Sec.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Yetkili_Sil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\excel_24.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dislicark.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\temizlik_fircasi_x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kilit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\giris.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\key.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\giris.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close12.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hesap.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hesap_duzenle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hesap_ekle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hesap_goruntule.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hesap_sil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hesap_sec.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\about_x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\listex24.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DD4CB3D6-04DD-4732-A5E3-89029812B498}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GorusmeKayitlari.Extensions</RootNamespace>
+    <AssemblyName>GorusmeKayitlari.Extensions</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="GorusmeKayitlari.Resources">
+      <HintPath>..\GorusmeKayitlari.Resources\bin\Debug\GorusmeKayitlari.Resources.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Win32.TaskScheduler, Version=2.8.1.0, Culture=neutral, PublicKeyToken=c416bc1b32d97233, processorArchitecture=MSIL">
+      <HintPath>..\packages\TaskScheduler.2.8.1\lib\net452\Microsoft.Win32.TaskScheduler.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Database\DatabaseExtension.cs" />
+    <Compile Include="Database\DatabaseUIExtension.cs" />
+    <Compile Include="Database\UI\DBOptions.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Database\UI\DBOptions.Designer.cs">
+      <DependentUpon>DBOptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InterviewExporter\InterviewExporterExtension.cs" />
+    <Compile Include="InterviewExporter\InterviewExporterUIExtension.cs" />
+    <Compile Include="InterviewExporter\UI\ExcelExporterOptions.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InterviewExporter\UI\ExcelExporterOptions.Designer.cs">
+      <DependentUpon>ExcelExporterOptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InterviewExporter\UI\VarsayilanExcelTema.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InterviewExporter\UI\VarsayilanExcelTema.Designer.cs">
+      <DependentUpon>VarsayilanExcelTema.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Logger\LoggerExtension.cs" />
+    <Compile Include="Logger\LoggerUIExtension.cs" />
+    <Compile Include="Logger\UI\LoggerOptions.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Logger\UI\LoggerOptions.Designer.cs">
+      <DependentUpon>LoggerOptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Reminder\Class\BildirimSesi.cs" />
+    <Compile Include="Reminder\Class\OtomatikKapatma.cs" />
+    <Compile Include="Reminder\Formlar\HatirlatmaEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reminder\Formlar\HatirlatmaEkle.Designer.cs">
+      <DependentUpon>HatirlatmaEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reminder\Formlar\HatirlatmaListesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reminder\Formlar\HatirlatmaListesi.Designer.cs">
+      <DependentUpon>HatirlatmaListesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reminder\Hatirlatma.cs" />
+    <Compile Include="Reminder\Hatirlatmalar.cs" />
+    <Compile Include="Reminder\HatirlatmaTask.cs" />
+    <Compile Include="Reminder\ReminderExtension.cs" />
+    <Compile Include="Reminder\ReminderUIExtension.cs" />
+    <Compile Include="Reminder\UI\NotifySoundOpt.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Reminder\UI\NotifySoundOpt.Designer.cs">
+      <DependentUpon>NotifySoundOpt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reminder\UI\AutoCloseOptions.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Reminder\UI\AutoCloseOptions.Designer.cs">
+      <DependentUpon>AutoCloseOptions.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Database\UI\DBOptions.resx">
+      <DependentUpon>DBOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InterviewExporter\UI\ExcelExporterOptions.resx">
+      <DependentUpon>ExcelExporterOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InterviewExporter\UI\VarsayilanExcelTema.resx">
+      <DependentUpon>VarsayilanExcelTema.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Logger\UI\LoggerOptions.resx">
+      <DependentUpon>LoggerOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reminder\Formlar\HatirlatmaEkle.resx">
+      <DependentUpon>HatirlatmaEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reminder\Formlar\HatirlatmaListesi.resx">
+      <DependentUpon>HatirlatmaListesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reminder\UI\NotifySoundOpt.resx">
+      <DependentUpon>NotifySoundOpt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reminder\UI\AutoCloseOptions.resx">
+      <DependentUpon>AutoCloseOptions.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GorusmeKayitlari.Components\GorusmeKayitlari.Components.csproj">
+      <Project>{27BE94EB-3F0A-4206-85F0-D7ECA65C72CC}</Project>
+      <Name>GorusmeKayitlari.Components</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GorusmeKayitlari.Core\GorusmeKayitlari.Core.csproj">
+      <Project>{cff2d57c-4e4f-4891-a2fa-4f3572cd9fb7}</Project>
+      <Name>GorusmeKayitlari.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

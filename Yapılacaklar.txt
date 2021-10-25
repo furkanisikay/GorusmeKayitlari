@@ -1,0 +1,20 @@
+1)Seçmeli kategori sistemi ile sadece seçilen kategorileri görüntüleme özelliði eklenecek - YAPILDI
+2)kullanýcý sýnýfý düzenlenerek yetkilendirme sistemiyle beraber;
+kategoriler,kullanýcýlar,kurumlar,yetkililer ve görüþmeler için ekle-düzenle-silme yetkileri üzerinden iþlemler uygulanacak
+3)Veritabaný yedekleme sistemi yapýlacak
+4)Ayarlar formu yapýlacak - YAPILDI
+5)görüþ bildirme formu yapýlacak
+6)lisans sistemi entegre edilecek
+7)kurulum haline getirilerek siteye tekrar yüklenip satýþa hazýrlanýlacak
+8)Kurum Arama özelliði eklenecek
+9)Hatýrlatýcý Özelliði Eklenecek 
+10)Splash Screen Yapýlacak : https://www.youtube.com/watch?v=FyOT2TcFnVE , https://www.youtube.com/watch?v=zLKYkj-bCn4
+11)görüþme görüntüleme sayfasýna kurumun bilgileri gösterilecek þekilde ayarlanacak
+ 
+Bitiþ...
+
+[Deðiþtirilme tarihi:24.04.2017]
+[Deðiþtirilme tarihi:07.02.2017]
+(birgün bu dosyayý gördüðümde belki c# ý unutmuþ olacaðým ama o zaman mekatronik mühendisi olacaðým için mecburiyettende olsa tekrar alýþýp bu projeyi tamamlayacaðým. elveda c# elveda Visual Studio 2015 tekrar görüþmek üzere - NoviceHacker®)
+[Deðiþtirilme tarihi:06.07.2018]
+(ben geldim bütün sene öyle yada böyle bi þekilde çok çalýþýp hiçbir þekilde visual studio açmadým bilgisayarýmý bil 1 sene boyunca sadece 1 defa 1 saatliðine gördüm.þimdi biçok þeyi hatýrlamýyorum ama bu asla hatýrlamayacaðým anlamýna gelmiyor. YENÝDEN MERHABA)

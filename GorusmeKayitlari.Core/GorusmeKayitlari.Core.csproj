@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CFF2D57C-4E4F-4891-A2FA-4F3572CD9FB7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GorusmeKayitlari.Core</RootNamespace>
+    <AssemblyName>GorusmeKayitlari.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="itextsharp">
+      <HintPath>..\..\..\..\..\..\NoviceHacker TOOLS\2.PROJELERİM\Masaüstü Programlama\C#\1) C# Yardımcı Araçlar\Uzantılar\itextsharp-dll-core\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\packages\Microsoft.Office.Interop.Excel.15.0.4795.1000\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WPFCustomMessageBox">
+      <HintPath>..\..\..\..\..\..\NoviceHacker TOOLS\2.PROJELERİM\Masaüstü Programlama\C#\1) C# Yardımcı Araçlar\Uzantılar\WPFCustomMessageBox\WPFCustomMessageBox.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Components\ComboBoxItem.cs" />
+    <Compile Include="Components\FiltreleEventHandler.cs" />
+    <Compile Include="Components\KurumListelemeModu.cs" />
+    <Compile Include="Components\KurumListelemeModuArgs.cs" />
+    <Compile Include="Crypt.cs" />
+    <Compile Include="Components\DataListViewItem.cs" />
+    <Compile Include="Components\DataTreeNode.cs" />
+    <Compile Include="DB\ConnectionManager.cs" />
+    <Compile Include="DB\Methods\Gorusmeler.cs" />
+    <Compile Include="DB\Methods\Kategoriler.cs" />
+    <Compile Include="DB\Methods\KullaniciHesaplar.cs" />
+    <Compile Include="DB\Methods\Kullanicilar.cs" />
+    <Compile Include="DB\Methods\Kurumlar.cs" />
+    <Compile Include="DB\Methods\Yetkililer.cs" />
+    <Compile Include="DB\Objects\DigerYetkilerTools.cs" />
+    <Compile Include="DB\Objects\Gorusme.cs" />
+    <Compile Include="DB\Objects\IConnMng.cs" />
+    <Compile Include="DB\Objects\IIdliNesne.cs" />
+    <Compile Include="DB\Objects\IletisimBilgileri.cs" />
+    <Compile Include="DB\Objects\Kategori.cs" />
+    <Compile Include="DB\Objects\Kullanici.cs" />
+    <Compile Include="DB\Objects\KullaniciHesap.cs" />
+    <Compile Include="DB\Objects\KullaniciHesapDurumu.cs" />
+    <Compile Include="DB\Objects\KullaniciHesapDurumuAraclari.cs" />
+    <Compile Include="DB\Objects\Kurum.cs" />
+    <Compile Include="DB\Objects\NesneTuruAraclari.cs" />
+    <Compile Include="DB\Objects\NesneYetkileriTools.cs" />
+    <Compile Include="DB\Objects\TumunuGetirArgs.cs" />
+    <Compile Include="DB\Objects\YukleniyorkenArgs.cs" />
+    <Compile Include="DB\Objects\NesneTuru.cs" />
+    <Compile Include="DB\Objects\NesneYetkileri.cs" />
+    <Compile Include="DB\Objects\DigerYetkiler.cs" />
+    <Compile Include="DB\Objects\Yetkili.cs" />
+    <Compile Include="DB\Tools.cs" />
+    <Compile Include="Delegates.cs" />
+    <Compile Include="DigerFonksiyonlar.cs" />
+    <Compile Include="DisariAktar\Excel\ExcelAraclari.cs" />
+    <Compile Include="DisariAktar\Excel\ExcelBlok.cs" />
+    <Compile Include="DisariAktar\Excel\ExcelDosyaArgs.cs" />
+    <Compile Include="DisariAktar\Excel\ExcelFont.cs" />
+    <Compile Include="DisariAktar\Excel\ExcelIcerikTemaConverter.cs" />
+    <Compile Include="DisariAktar\Excel\ExcelIcerikTeması.cs" />
+    <Compile Include="DisariAktar\GorusmeAktar.cs" />
+    <Compile Include="DisariAktar\GorusmeAktarimTuru.cs" />
+    <Compile Include="DisariAktar\Html\HtmlDosyaArgs.cs" />
+    <Compile Include="DisariAktar\Pdf\PdfDosyaArgs.cs" />
+    <Compile Include="Extensions\Logger.cs" />
+    <Compile Include="Extension\IExtension.cs" />
+    <Compile Include="Extension\IExtensionParameters.cs" />
+    <Compile Include="Extension\IExtensionUI.cs" />
+    <Compile Include="Extension\IInitializable.cs" />
+    <Compile Include="Extension\IUIExtension.cs" />
+    <Compile Include="Components\GorusmeListelemeModu.cs" />
+    <Compile Include="Components\GosterimTuru.cs" />
+    <Compile Include="Components\IslemButonlariDurumu.cs" />
+    <Compile Include="Gereksinimler.cs" />
+    <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="IListeliControl.cs" />
+    <Compile Include="License.cs" />
+    <Compile Include="MsgBox\MessageBoxResultTools.cs" />
+    <Compile Include="MsgBox\MsgBox.cs" />
+    <Compile Include="MsgBox\MsgBoxBaslik.cs" />
+    <Compile Include="MsgBox\MsgBoxEx.cs" />
+    <Compile Include="MsgBox\MsgBoxTuru.cs" />
+    <Compile Include="NumberConverter.cs" />
+    <Compile Include="Optimizasyon.cs" />
+    <Compile Include="Oturum.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Regedit.cs" />
+    <Compile Include="UI\AppManager.cs" />
+    <Compile Include="UI\IApp.cs" />
+    <Compile Include="UniqueKey.cs" />
+    <Compile Include="YetkiSistemi\Methods.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
