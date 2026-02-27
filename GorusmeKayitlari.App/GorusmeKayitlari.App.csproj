@@ -358,7 +358,8 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>CALL "D:\NH\2.PROJELERIM\Masaüstü Programlama\AUTOIT\OTOMATİKLEŞTİRİCİLER\ProjectBackuper\ProjectBackuper.Exe" "C:\Users\furka\OneDrive\Visual Studio 2019\Projeler\GorusmeKayitlari-Backups" "$(SolutionDir)" "$(SolutionName)" /T="$(ConfigurationName)" /D /7z</PostBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
